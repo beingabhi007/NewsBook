@@ -10,13 +10,15 @@ import RealEstate from './components/RealEstate';
 
 import "./index.css"
 import { BrowserRouter as Router, Switch, Route } from  "react-router-dom"
+import Navbar from "./components/Navbar";
 
 const App = () => {
   return(
     <>   
-  <Router >
+  <Router>
+  <Navbar/>
   <Switch> 
-  <Route exact path="/" component={Hero} />   
+  <Route exact path="/" component={Hero}/>   
   <Route exact path="/tech" component={Tech}/>
   <Route exact path="/science" component={Science}/>  
   <Route exact path="/health" component={Health}/>  
