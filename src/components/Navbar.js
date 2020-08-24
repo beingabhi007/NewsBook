@@ -13,29 +13,29 @@ const Navbar = () => {
   </button>
   <div className="collapse navbar-collapse" id="navbarText">
     <ul className="navbar-nav ml-auto">
+    <li className="nav-item active">
+    <span className="nav-link" onClick={ () => { history.push("/") }} >Home</span>
+    </li>
       <li className="nav-item active">
-       <span className="nav-link" onClick={ ()=> { history.push("/tech"); }} >Home</span>
-      </li>
-      <li className="nav-item active">
-        <span className="nav-link">Tech</span>
+        <span className="nav-link" onClick={ () => { history.push("/tech") }} >Tech</span>
      </li>
       <li className="nav-item active">
-        <span className="nav-link" >Science</span>
+        <span className="nav-link" onClick={ () => { history.push("/science") }}  >Science</span>
       </li> 
       <li className="nav-item active">
-        <span className="nav-link" >Health</span>
+        <span className="nav-link" onClick={ () => { history.push("/health") }}  >Health</span>
       </li> 
       <li className="nav-item active">
-        <span className="nav-link" >Sports</span>
+        <span className="nav-link" onClick={ () => { history.push("/sports") }}  >Sports</span>
       </li>
        <li className="nav-item active">
-        <span className="nav-link" >Arts</span>
+        <span className="nav-link" onClick={ () => { history.push("/arts") }}  >Arts</span>
       </li>
        <li className="nav-item active">
-        <span className="nav-link" >Business</span>
+        <span className="nav-link" onClick={ () => { history.push("/business") }}  >Business</span>
       </li> 
       <li className="nav-item active">
-        <span className="nav-link" >Real Estate</span>
+        <span className="nav-link" onClick={ () => { history.push("/realestate") }}  >Real Estate</span>
       </li>
     
     </ul>

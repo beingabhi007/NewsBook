@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react"
 import Axios from "axios"
 import SingleNews from "../components/SingleNews";
 import Loader from './Loader';
+import Navbar from "./Navbar";
 
 const Tech = () => {
 
@@ -28,7 +29,7 @@ if(loader){
 else{
     return (
         <> 
-       
+       <Navbar/>
         { myNews.map( (news) => 
         (
  
