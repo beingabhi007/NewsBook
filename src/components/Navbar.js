@@ -1,33 +1,41 @@
 import React from "react" 
+import { useHistory } from 'react-router-dom';
 
+const Navbar = () => { 
 
-const Navbar = () => {
+  const history = useHistory();
     return(
         <> 
-  <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="/">NewsBook</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+  <nav className="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+  <span className="navbar-brand">NewsBook</span>
+  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span className="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="navbarText">
-    <ul class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="/">Home</a>
+  <div className="collapse navbar-collapse" id="navbarText">
+    <ul className="navbar-nav ml-auto">
+      <li className="nav-item active">
+       <span className="nav-link" onClick={ ()=> { history.push("/tech"); }} >Home</span>
       </li>
-      <li class="nav-item active">
-        <a class="nav-link" href="/">Tech</a>
-      </li> <li class="nav-item active">
-        <a class="nav-link" href="/">Science</a>
-      </li> <li class="nav-item active">
-        <a class="nav-link" href="/">Health</a>
-      </li> <li class="nav-item active">
-        <a class="nav-link" href="/">Sports</a>
-      </li> <li class="nav-item active">
-        <a class="nav-link" href="/">Arts</a>
-      </li> <li class="nav-item active">
-        <a class="nav-link" href="/">Book</a>
-      </li> <li class="nav-item active">
-        <a class="nav-link" href="/">Real Estate</a>
+      <li className="nav-item active">
+        <span className="nav-link">Tech</span>
+     </li>
+      <li className="nav-item active">
+        <span className="nav-link" >Science</span>
+      </li> 
+      <li className="nav-item active">
+        <span className="nav-link" >Health</span>
+      </li> 
+      <li className="nav-item active">
+        <span className="nav-link" >Sports</span>
+      </li>
+       <li className="nav-item active">
+        <span className="nav-link" >Arts</span>
+      </li>
+       <li className="nav-item active">
+        <span className="nav-link" >Business</span>
+      </li> 
+      <li className="nav-item active">
+        <span className="nav-link" >Real Estate</span>
       </li>
     
     </ul>

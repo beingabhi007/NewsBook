@@ -1,9 +1,9 @@
 import React, {useEffect, useState} from "react"  
 import Axios from "axios"
-import SingleNews from "../components/SingleNews";
+import SingleNews from "./SingleNews";
 import Loader from './Loader';
 
-const Tech = () => {
+const Business = () => {
 
  const [myNews,setMyNews] = useState([]);    
  const [loader,setLoader] = useState(true) 
@@ -13,7 +13,7 @@ useEffect(() => {
 
  const fetchData = async () => {
   const { data } = await Axios.get(`
-  https://api.nytimes.com/svc/topstories/v2/technology.json?api-key=8GGV7oaG1gvN8oQBk538rND9xfltyUWP
+  https://api.nytimes.com/svc/topstories/v2/business.json?api-key=8GGV7oaG1gvN8oQBk538rND9xfltyUWP
   `);
   setMyNews(data.results);
   setLoader(false)
@@ -51,4 +51,4 @@ else{
 } 
 
 
-export default Tech;
+export default Business;

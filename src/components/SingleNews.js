@@ -1,7 +1,7 @@
 import React from "react" 
 
 
-const SingleNews = ({title, heroUrl, caption,publishDetail,abstract,live}) => {
+const SingleNews = ({title, heroUrl, caption="",publishDetail,abstract,live}) => {
     return(
         <> 
         <br/><br/>

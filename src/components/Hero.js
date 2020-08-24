@@ -36,7 +36,7 @@ else{
  
          <SingleNews 
          title={news.title} 
-         heroUrl={news.multimedia[0]?.url} 
+         heroUrl={ (news.multimedia[0]?.url) ? (news.multimedia[0]?.url) : "https://i.pinimg.com/originals/b9/85/a3/b985a3573f0d87d8a7fbb5ad6be3e372.jpg" } 
          caption={news.multimedia[0]?.caption}
          publishDetail={news.published_date}
          abstract={news.abstract}
